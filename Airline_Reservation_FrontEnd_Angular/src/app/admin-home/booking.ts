@@ -1,0 +1,33 @@
+export class Booking
+{ 
+     id:number;
+     username:string;
+     airline:string;
+     departureAirport:string;
+     arrivalAirport:string;
+     departureTime:Date;
+     arrivalTime:Date;
+     ticketPrice:number;
+     bookingStatus:string;
+
+constructor(
+        id:number,
+        username:string,
+        airline:string,
+        departureAirport:string,
+        arrivalAirport:string,
+        departureTime:Date,
+        arrivalTime:Date,
+        ticketPrice:number,
+        bookingStatus:string,
+    ){
+      this.id=id;
+      this.username=username;
+      this.airline=airline;
+      this.departureAirport=departureAirport;
+      this.arrivalAirport=arrivalAirport;
+      this.departureTime=departureTime;
+      this.arrivalTime=arrivalTime;
+      this.ticketPrice=ticketPrice;
+      this.bookingStatus=bookingStatus;  
+    }}

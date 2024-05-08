@@ -1,0 +1,102 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.home-header {
+  background-color: #007BFF;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home-header h1 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.home-header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.home-header li {
+  margin-right: 1rem;
+}
+
+.home-header a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.home-header a:hover {
+  color: #0056b3;
+}
+
+.home-main {
+  flex: 1;.admin-container {
+display: flex;
+flex-direction: column;
+height: 100vh;
+}
+
+.home-header {
+background-color: #007BFF;
+color: white;
+padding: 1rem;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.home-header h1 {
+font-size: 1.5rem;
+margin: 0;
+}
+
+.home-header ul {
+list-style: none;
+margin: 0;
+padding: 0;
+display: flex;
+}
+
+.home-header li {
+margin-right: 1rem;
+}
+
+.home-header a {
+color: white;
+text-decoration: none;
+font-weight: bold;
+transition: color 0.3s;
+}
+
+.home-header a:hover {
+color: #0056b3;
+}
+
+.home-main {
+flex: 1;
+padding: 2rem;
+}padding: 2rem;
+}
+
+
+body {
+  background-image: url('airplane-wing-sky.jpg');
+padding: 330px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+ 
+
+}
+
+

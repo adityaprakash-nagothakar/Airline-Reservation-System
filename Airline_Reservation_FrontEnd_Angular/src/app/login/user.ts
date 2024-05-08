@@ -1,0 +1,33 @@
+export class User
+{ 
+   id:number;
+   name:string;
+   mobile:string;
+   address:string;
+   pincode:string;
+  password:string;
+  username:string;
+  enabled:boolean;
+  role:string;
+  
+  constructor(
+    id:number,
+   name:string,
+   mobile:string,
+   address:string,
+   pincode:string,
+  password:string,
+  username:string,
+  enabled:boolean,
+  role:string,
+  ){
+  this.id=id
+  this.name=name;
+  this.mobile=mobile;
+  this.address=address;
+  this.pincode=pincode;
+  this.password=password;
+  this.username=username;
+  this.enabled=enabled;
+  this.role=role;
+  }}

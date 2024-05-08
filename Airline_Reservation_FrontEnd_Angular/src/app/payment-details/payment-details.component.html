@@ -1,0 +1,47 @@
+<header class="admin-header"><marquee width="60%" direction="right" height="50px">
+    <h1>WELCOME ADMIN </h1></marquee>
+    <nav>
+        <ul>
+          <li><a routerLink="/admin-home" routerLinkActive="active" class="nav-link">
+            <p style="color:floralwhite">BACK </p>
+            </a></li>
+        </ul>
+      </nav></header>
+
+<h2 style="text-align:center">PAYMENT LIST</h2>
+<div class="card">
+    <div class="card-body">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th> PaymentId</th>
+                    <th>PaymentDate</th>
+                    <th> TicketPrice</th>
+                    <th> NameOnCard</th>
+                    <th> CardNumber</th>
+                    <th> ExpYear</th>
+                    <th> Cvv</th>
+                    <th> PaymentStatus</th>
+                   
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let payment of payments  | paginate:{itemsPerPage:pageCount,currentPage:pageNumber}">
+                    <td> {{payment.paymentId}} </td>
+                    <td>{{payment.paymentDate}}</td>
+                    <td> {{ payment.ticketPrice }} </td> 
+                    <td> {{payment.nameOnCard }} </td>
+                    <td> {{ payment.cardNumber}} </td>
+                    <td> {{ payment.expYear}} </td>
+                    <td> {{ payment.cvv}} </td>
+                    <td> {{ payment.paymentStatus}} </td>
+                  
+                   
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="text-right">
+        <pagination-controls (pageChange)="pageNumber= $event"></pagination-controls>
+        </div>
+</div>

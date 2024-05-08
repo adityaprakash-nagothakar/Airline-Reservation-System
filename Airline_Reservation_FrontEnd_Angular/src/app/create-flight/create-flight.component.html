@@ -1,0 +1,61 @@
+
+    <header class="admin-header"><marquee width="60%" direction="right" height="50px">
+      <h1>WELCOME ADMIN </h1></marquee><nav>
+        <ul>
+          <li><a routerLink="/admin-home" routerLinkActive="active" class="nav-link">
+            <p style="color:floralwhite">BACK </p>
+            </a></li>
+        </ul>
+      </nav></header>
+<div class="contain">
+
+<div class="flight-form">
+  
+    <form #flightform="ngForm" (ngSubmit)="addFlight()"></form>
+    <form>
+      <div class="form-group">
+      
+        <h2> ADD NEW FLIGHT</h2>
+        
+      <div class="form-outline mb-4">
+       
+        <input type="text" name="Flightnumber" class="form-control" placeholder="Enter Flight Number" [(ngModel)]="flight.flight_number"
+          required >
+      </div>
+  
+      <div class="form-outline mb-4">      
+      
+        <input type="text" name="airlineName" class="form-control" placeholder="Enter Airline Name" [(ngModel)]="flight.airlineName">
+          
+      </div>
+ 
+      <div class="form-outline mb-4">
+      <input type="text" name="Departureairport" class="form-control" placeholder="Enter Departure Airport" [(ngModel)]="flight.departureAirport">
+      </div>
+     
+      <div class="form-outline mb-4">
+      <input type="text" name="Arrivalairport" class="form-control" placeholder="Enter Arrival Airport" [(ngModel)]="flight.arrivalAirport">
+      </div>
+      
+     
+      <div class="form-outline mb-4">
+      <input type="date" name="Departuredate" class="form-control" placeholder="Enter Departure Date" [(ngModel)]="flight.departureDate"
+      required 
+         
+      #Departuredate="ngModel" [class.is-invalid]="Departuredate.invalid&& Departuredate.touched" />
+      </div>
+
+   
+      <div class="form-outline mb-4">
+      <input type="date" name="Arrivaldate" class="form-control" placeholder="Enter Arrival Date" [(ngModel)]="flight.arrivalDate"
+      required>
+      </div>
+     
+      <div class="form-outline mb-4">
+      <input type="text" name="ticketPrice" class="form-control" placeholder="Enter Ticket Price" [(ngModel)]="flight.ticketPrice">
+      </div>
+      <div class="form-outline mb-4">
+        <input type="text" name="noOfTickets" class="form-control" placeholder="Enter No Of Tickets" [(ngModel)]="flight.noOfTickets">
+        </div>
+      <button (click)="addFlight()" class="btn btn-success ">Sumbit</button><br>
+     </div>

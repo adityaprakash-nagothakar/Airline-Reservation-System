@@ -1,0 +1,52 @@
+<header class="passenger-header">  <marquee width="60%" direction="right" height="50px">
+ 
+  
+    <h1>WELCOME TO SHARO AIRLINE RESERVATION</h1>
+    
+  </marquee>
+  
+  <ul><li><button (click)="bookingList()">See your Bookings and done payment</button></li></ul>
+
+
+  </header>
+
+<div class="card">
+   <h2 style="text-align:center">FLIGHT LIST</h2>
+    <div class="card-body">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Flight Id </th>
+                    <th>Flight number</th>
+                    <th>Airline Name</th>
+                    <th>Departure Airport</th>
+                    <th>Arrival Airport</th>
+                    <th>Departure Date</th>
+                    <th>Arrival Date</th>
+                    <th>Ticket Price</th>
+                   <th> Booking </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let flight of flights | paginate:{itemsPerPage:pageCount,currentPage:pageNumber}">
+                    <td>{{ flight.flight_id }} </td> 
+                    <td>{{ flight.flight_number}} </td>
+                    <td>{{ flight.airlineName}} </td>
+                    <td>{{ flight.departureAirport}} </td>
+                    <td>{{ flight.arrivalAirport}} </td>
+                    <td>{{ flight.departureDate}} </td>
+                    <td>{{ flight.arrivalDate}} </td>
+                    <td>{{ flight.ticketPrice}}</td>  
+                    <td><button type="button" class="btn btn-info" (click)=newBooking(flight.flight_id) >Book Ticket</button></td>
+                   
+                </tr> 
+            </tbody>
+        </table>
+    </div>
+    <div class="text-right">
+        <pagination-controls (pageChange)="pageNumber= $event"></pagination-controls>
+    </div>
+    
+
+   
+</div>  

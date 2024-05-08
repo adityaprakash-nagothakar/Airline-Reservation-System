@@ -1,0 +1,108 @@
+.contain{
+  background-image: url('aeroplane-.jpg');
+  background-repeat: no-repeat;
+  padding: 1px;
+  background-size: cover;
+
+
+}.admin-header {
+  background-color: #007BFF;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.admin-header h1 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.admin-header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.admin-header li {
+  margin-right: 1rem;
+}
+.field input::placeholder{
+  color: white;
+}
+.field:nth-child(2){
+  margin-top: 20px;
+}
+.field span{
+  position: absolute;
+  width: 50px;
+  line-height: 50px;
+
+}
+.flight-form {
+  background-color: #e9eeef;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  padding: 50px;
+  border-radius: 5px;
+
+  width: 300px;
+  
+      max-width: 400px;
+      margin: 0 auto;
+     
+    }
+    
+    h2 {
+      color: rgb(18, 18, 18);
+      text-align: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    
+
+    input{
+      margin: 25px 0 0 0;
+      width: 100%;
+      height: 50px;
+      color: #0b0606;
+  
+      border-radius: 8px;
+      margin-top: 40px;
+      outline: none;
+      cursor: pointer;
+      border-radius: 8px;
+     
+    }
+    button{
+      margin: 25px 0 0 0;
+      width: 100%;
+      height: 50px;
+      color: #100808;
+      font-size: 18px;
+      font-weight: 600;
+      border: 2px solid rgba(6, 6, 6, 0.438);
+      border-radius: 8px;
+      background: hsl(183, 97%, 49%);
+      margin-top: 40px;
+      outline: none;
+      cursor: pointer;
+      border-radius: 8px;
+     
+    }
+    
+    button:hover {
+      background-color: #0056b3;
+    }
+
+.content .text{
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 35px;
+  color: rgb(247, 233, 233);
+}

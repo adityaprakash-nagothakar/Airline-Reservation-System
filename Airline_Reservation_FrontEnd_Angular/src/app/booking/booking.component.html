@@ -1,0 +1,53 @@
+<a routerLink="/getflights" routerLinkActive="active" class="nav-link">
+  <p style="color:hsl(205, 87%, 47%)">BACK </p>
+  </a>
+
+<div class="registration-container">
+
+ <div class="booking-form">
+  <h2> Booking Form</h2>
+  <form #bookingform="ngForm" (ngSubmit)="newBooking(flight_id)"></form>
+      <div class="form-group">
+        <label for="username">Passenger Name</label> <label style="color: red;">*</label>
+     
+      <div class="form-outline mb-4">
+        <input type="text" name="userName" class="form-control" placeholder="UserName" [(ngModel)]="booking.username"
+          required 
+          title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"
+          #userName="ngModel" [class.is-invalid]="userName.invalid&&userName.touched" />
+
+        <div *ngIf="userName.errors && (userName.invalid && userName.touched)">
+          <small class="text-danger" *ngIf="userName.errors?.['required']">User Name is required</small>
+          <small class="text-danger" *ngIf="userName.errors?.['pattern']"></small>
+        </div>
+      </div>
+  
+      
+         
+      <label for="passengers">Departure Airport</label><label style="color: red;">*</label>
+      <div class="form-outline mb-4">
+      <input type="text" name="departureAirport" class="form-control" placeholder="DepartureAirport" [(ngModel)]="flight.departureAirport">
+      </div>
+      <label for="passengers">Arrival Airport</label><label style="color: red;">*</label>
+      <div class="form-outline mb-4">
+      <input type="text" name="arrivalAirport" class="form-control" placeholder="ArrivalAirport" [(ngModel)]="flight.arrivalAirport">
+      </div>
+      
+      <label for="departureDate">Departure Date</label><label style="color: red;">*</label>
+      <div class="form-outline mb-4">
+      <input type="date" name="departureDate" class="form-control" placeholder="DepartureDate" [(ngModel)]="flight.departureDate">
+      </div>
+      <label for="passengers">Arrival Date</label><label style="color: red;">*</label>
+      <div class="form-outline mb-4">
+      <input type="date" name="arrivalDate" class="form-control" placeholder="ArrivalDate" [(ngModel)]="flight.arrivalDate">
+      </div>
+      <label for="zip"class="	fa fa-inr">Ticket Price</label>
+      <input type="text" name="ticketPrice"class="form-control" placeholder="Tiket Price"[(ngModel)]="flight.ticketPrice"readonly />
+      <label for="passengers">Booking Status</label><label style="color: red;">*</label>
+      <div class="form-outline mb-4">
+      <input type="text" name="bookingStatus" class="form-control" placeholder="bookingStatus" [(ngModel)]="booking.bookingStatus">
+      </div>
+      <button (click)="newBooking(flight_id)" class="btn btn-success ">Submit</button><br>
+     
+    </div>
+   

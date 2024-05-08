@@ -1,0 +1,32 @@
+.thank-you-container {
+    text-align: center;
+    margin-top: 100px;
+  }
+  
+  .circle-tick {
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px;
+  }
+  
+  .circle-tick i {
+    color: rgb(17, 215, 80);
+    font-size: 48px;
+  }
+  
+  h1 {
+    color: #333;
+    font-size: 24px;
+    margin: 10px 0;
+  }
+  
+  p {
+    color: #666;
+    font-size: 18px;
+  }
+  

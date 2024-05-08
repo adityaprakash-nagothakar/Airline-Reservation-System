@@ -1,0 +1,64 @@
+table,th,td{
+    border: 1px solid rgb(206, 195, 195);
+    border-collapse: collapse;
+   padding: 30px;
+   
+}
+th{
+    background-color: hsl(186, 86%, 58%);
+}
+td{
+   background-color: azure;
+}
+button{
+    background-color: green;
+    color: aliceblue;
+}
+.passenger-header {
+
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:fixed;
+    top:0;
+    left:0;
+}
+.passenger-header h1 {
+  font-size: 1.5rem;
+    margin: 0;
+  }
+  
+  .passenger-header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .passenger-header li {
+    margin-right: 1rem;
+  }
+  
+header h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color:#101010;
+    padding:70px;
+  }
+   .card{
+
+    align-items: center;
+   }
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
